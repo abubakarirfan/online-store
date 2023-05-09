@@ -1,9 +1,174 @@
-body
-{
+body {
     font-family: 'Lato', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     background-color: #f6fff8;
-    width: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Change this to flex-start */
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
 }
+
+.half-page-bg {
+    background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.795)), url('../imgs/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 40%; /* Adjust this value */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.user-content
+{
+    z-index: 1;
+}
+.user-content i
+{
+    color: white;
+    font-size: 6rem;
+    /* center */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.user-content p {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 300;
+    position: absolute;
+    bottom: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.user-content .sign-up-now
+{
+    font-size: 1.2rem;
+    font-weight: 300;
+    font-style: italic;
+    bottom: 22%;
+}
+
+.user-content .sign-up-now a
+{
+    color: #adc178;
+    text-decoration: none;
+}
+
+.user-content .sign-up-now a:hover
+{
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.login-btn {
+    padding: 0.1em 0.15em;
+    width: 13em;
+    height: 4.2em;
+    background-color: #212121;
+    border: 0.08em solid #fff;
+    border-radius: 0.3em;
+    font-size: 12px;
+    position: absolute;
+    top: 66%; /* Adjust this value according to your needs */
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+.login-btn span 
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0.4em;
+    width: 8.25em;
+    height: 2.5em;
+    background-color: #b4d163;
+    border-radius: 0.2em;
+    font-size: 1.5em;
+    color: #1a1a1a;
+    font-weight: 600;
+    text-transform: uppercase;
+    border: 0.08em solid #fff;
+    box-shadow: 0 0.4em 0.1em 0.019em #6b7c3b;
+}
+  
+.login-btn span:hover 
+{
+    transition: all 0.5s;
+    transform: translate(0, 0.4em);
+    background-color: #97b14f;
+    box-shadow: 0 0 0 0 #fff;
+}
+  
+.login-btn span:not(hover) 
+{
+    transition: all 1s;
+}
+  
+  
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    width: 150%; /* Add this */
+}
+
+.hero-section {
+    text-align: center;
+}
+.hero-section h1
+{
+    color: #adc178;
+    font-size: 3rem;
+    font-style: italic;
+    text-shadow: 4px 4px 0px rgba(0, 0, 0, 0.767);
+    font-weight: 900;
+}
+
+.hero-section h2
+{
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+/* ... (the rest of your CSS remains unchanged) ... */
+
+
+.container-input {
+    position: relative;
+  }
+  
+  .input {
+    width: 150px;
+    padding: 10px 0px 10px 40px;
+    border-radius: 9999px;
+    border: solid 1px #333;
+    transition: all .2s ease-in-out;
+    outline: none;
+    opacity: 0.8;
+  }
+  
+  .container-input svg {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translate(0, -50%);
+  }
+  
+  .input:focus {
+    opacity: 1;
+    width: 250px;
+  }
+  
