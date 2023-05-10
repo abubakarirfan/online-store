@@ -275,6 +275,31 @@ a
                -13px -13px 100px #ffffff;*/
   }
 
+  #signup-link-in-login
+  {
+    margin-top: 4em;
+  }
+
+  #signup-link-in-login a
+  {
+    color: #fff;
+    font-weight: 300;
+    font-style: italic;
+    text-transform: capitalize;
+    background-color: rgba(20, 20, 20, 0.541);
+    padding: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.116);
+    transition: 0.3s ease-in-out;
+  }
+
+  #signup-link-in-login a:hover
+  {
+    background-color: rgba(0, 0, 0, 0.767);
+    border: 1px solid rgba(129, 129, 129, 0.76);
+    text-decoration: underline;
+    color: #6b7c3b;
+  }
+
   #login-btn-in-login
   {
     margin-top: 1em;
