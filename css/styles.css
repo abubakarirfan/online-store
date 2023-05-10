@@ -224,8 +224,6 @@ a
     font-weight: 600;
   }
   
-  /* ... rest of your styles ... */
-  
    
    .go-back-btn > svg {
     margin-right: 5px;
@@ -281,3 +279,67 @@ a
   {
     margin-top: 1em;
   }
+
+  /* ... Sign Up Page CSS  ... */
+
+  .signup-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 500px;
+    height: 800px;
+    background: rgba(141, 141, 141, 0.1);
+    box-shadow: 0 8px 32px 0 rgba(2, 2, 3, 0.815);
+    backdrop-filter: blur(4.5px);
+    -webkit-backdrop-filter: blur(4.5px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    padding-top: 2em;
+  }
+
+  .signup-input {
+    width: 50%;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    padding: 1em;
+    margin: 1.8em;
+    background-color: #ccc;
+    box-shadow: inset 2px 5px 10px rgba(0, 0, 0, 0.3);
+    transition: 300ms ease-in-out;
+  }
+  
+  .signup-input:focus {
+    background-color: white;
+    transform: scale(1.05);
+    /*box-shadow: 13px 13px 100px #969696,
+               -13px -13px 100px #ffffff;*/
+  }
+
+  #login-btn-in-signup
+  {
+    margin-top: 18em;
+  }
+
+  .fs-signup
+  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    height: 300px;
+    background: rgba(37, 37, 37, 0.548);
+    -webkit-backdrop-filter: blur(4.5px);
+    border-radius: 10px;
+    box-shadow: 0 8px 32px 0 rgba(2, 2, 3, 0.815);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+  }
+
+  .fs-signup legend
+  {
+    color: white;
+    font-size: 1em;
+    opacity: 0.6;
+  }
+  
