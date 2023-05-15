@@ -305,6 +305,11 @@ a
     margin-top: 1em;
   }
 
+    #login-btn-in-index 
+    {
+      margin-top: 0.5em;
+    }
+
   /* ... Sign Up Page CSS  ... */
 
   .signup-form {
